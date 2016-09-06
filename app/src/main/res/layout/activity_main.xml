@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dione.p2pdiscovery.MainActivity">
+    <android.support.v7.widget.AppCompatTextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:textColor="#fff"
+        android:id="@+id/myNodeId"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_below="@id/myNodeId"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:textColor="#fff"
+        android:text="My Peers"/>
+    <Button
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Test Message to Peers"
+        android:id="@+id/sendMessagetoPeers"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:visibility="visible"
+        android:id="@+id/noPeersAroundMessage"
+        android:gravity="center"
+        android:layout_below="@id/sendMessagetoPeers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Peers Around"/>
+    <android.support.v7.widget.ListViewCompat
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/peerList"
+        android:layout_below="@id/sendMessagetoPeers"/>
+
+</RelativeLayout>
